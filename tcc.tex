@@ -3,6 +3,9 @@
 %outro tipo de usar é o "ansinew"
 \usepackage{amsmath}
 \usepackage{indentfirst}
+\usepackage{multirow}
+
+
 \author{Vinícius Verginio}
 \date{15/04/2013}
 \title{SHOW LITTLE BOY}
@@ -25,7 +28,9 @@ acrescentar nova linha
 
 \begin{table}
 \begin{tabular}{|l|l|l|r|} %a segunda parte é como vai ficar centrado
+\multirow{2}{*}{ae}
 	a & b & \multicolumn{2}{c}{cd} \\
+	\cline{2-4}
 	a & b & c & d \\ \hline
 	a & b & c & d
 \end{tabular}
