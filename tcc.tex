@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 \usepackage[utf8]{inputenc}
 %outro tipo de usar é o "ansinew"
 \usepackage{amsmath}
@@ -8,6 +8,8 @@
 \usepackage{graphicx}
 \usepackage[brazil]{babel}
 \usepackage{enumitem}
+\usepackage{circuitikz}
+
 
 \author{Vinícius Verginio}
 \date{15/04/2013}
@@ -20,6 +22,7 @@
 \maketitle
 
 \newpage
+\chapter{Introdução}
 \section{Introdução}
 \label{sec:intro} %cria rotulo para seção
 Ainda não sei sobre o que será meu TCC. Estou sob pressão muito grande!!! %daqui pra frente nao vai no texto.
@@ -57,11 +60,32 @@ acrescentar nova linha
 	\item criciuma
 		\begin{enumerate}[label*=\arabic*.]
 		\item angeloni
-		\item valter
-		
+		\item valter		
 		\end{enumerate}
 \end{enumerate}
+
+%desenho de circuito elétrico -> ver bibliotec circuitikz
+\chapter{Circuitos}
+\label{fig:circuito}
+O circuito esta apresentado na figura \ref{fig:circuito} %falta fazer referencia
+
+\begin{figure}[!htb]
+\centering
+\begin{tikzpicture}
+\draw (0,0) to[lamp] (2,0); %do ponto 0,0 ate 0 2,0 coloque uma lampada
+\end{tikzpicture}
+\end{figure}
+
+outro circuito
+\begin{figure}[!htb]
+\centering
+\begin{tikzpicture}
+\draw (0,0) to[sV] (0,2) to[closing switch] (2,2) to[lamp] (2,0) -- (0,0);
+\end{tikzpicture}
+\end{figure}
+
 \newpage
+\chapter{Motivação}
 \section{Motivação}
 \label{sec:motiv}
 Conseguir o título de Eng. Eletricista.
