@@ -7,7 +7,7 @@
 \usepackage{float}
 \usepackage{graphicx}
 \usepackage[brazil]{babel}
-
+\usepackage{enumitem}
 
 \author{Vinícius Verginio}
 \date{15/04/2013}
@@ -41,14 +41,26 @@ acrescentar nova linha
 %cosmetico - usar commit com este nome para arrumar espaços, carateres e outros. Coisas que nao mudem o resultado final.
 
 %figura
-\begin{figure}[!htb]
-\centering
-\includegraphics{Ju 120 kg.jpeg}
-\caption{antigamente}
-\label{fig:jucelia}
-\end{figure}
+%\graphicspath{{Desktop/}}
+%\begin{figure}[!htb]
+%\centering
+%\includegraphics{Ju 120 kg}
+%\caption{antigamente}
+%\label{fig:jucelia}
+%\end{figure}
+
 %Capitulos
 
+%enumerar
+\begin{enumerate}
+	\item avai
+	\item criciuma
+		\begin{enumerate}[label*=\arabic*.]
+		\item angeloni
+		\item valter
+		
+		\end{enumerate}
+\end{enumerate}
 \newpage
 \section{Motivação}
 \label{sec:motiv}
