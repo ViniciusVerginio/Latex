@@ -1,13 +1,51 @@
 \documentclass{article}
-
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{indentfirst}
 \author{Vinícius Verginio}
 \date{15/04/2013}
 \title{SHOW LITTLE BOY}
+
+\newcommand{\vetor}{\textbf{E}} %troca texbr para vetor
 
 \begin{document}
 
 \maketitle
 
-Oi bebe.
+\newpage
+\section{Introdução}
+\label{sec:intro} %cria rotulo para seção
+Ainda não sei sobre o que será meu TCC. Estou sob pressão muito grande!!! %daqui pra frente nao vai no texto.
+
+\section{Motivação}
+\label{sec:motiv}
+Conseguir o título de Eng. Eletricista.
+
+Como vimos na introdução (secao \ref{sec:intro}) %da só o numero
+
+\ref{sec:motiv}
+
+Na equação $V=R I$
+
+Outra equação $I=V/R$
+
+Um numero em cima do outro fração => $I=\frac{V}{R}$
+
+$$I=\frac{V}{R}$$
+$ $%agora ta no modo matemático
+
+$$0=1+e^{j\pi}$$ %tem que usar os colchetes para ficar em cima
+
+IDFT {fórmula número \ref{eq:idft}: 
+\begin{equation}
+\label{eq:idft}
+x_n=\frac{1}{N}\sum_{k=0}^{n-1}X_k\cdot e^{i2\pi kn/N}
+\end{equation}
+
+\begin{align}
+\nabla \cdot E = - \frac{\partial \textbf{B}}{\partial t}
+\mu_0 \textbf{J} + \mu_0 \epsilon_0 \frac{\partial E}{\partial t}
+\end{align}
+show
 
 \end{document}
